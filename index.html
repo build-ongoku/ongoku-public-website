@@ -123,7 +123,10 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Ongoku. All rights reserved.</p>
+            <p>&copy; <span id="current-year"></span> Ongoku. All rights reserved.</p>
+            <script>
+                document.getElementById('current-year').textContent = new Date().getFullYear();
+            </script>
             <p><a href="mailto:hello@ongoku.com">hello@ongoku.com</a></p>
         </div>
     </footer>
